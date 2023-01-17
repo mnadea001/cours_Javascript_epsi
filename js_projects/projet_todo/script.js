@@ -27,6 +27,10 @@ for (let i = 0; i < task.length; i++) {
 
 // setInterval(hello, 2000)
 
+// setInterval(function hello() {
+//     console.log("Hello !");
+// }, 2000)
+
 // setInterval(function() {
 //     console.log("Hello !");
 // }, 2000)
