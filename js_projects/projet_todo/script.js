@@ -5,15 +5,15 @@ const clear = document.getElementById("clear");
 const url = document.getElementById("url");
 const load = document.getElementById("load");
 
-const task = ["Coder en Python", "Coder en c++", "Coder TypeScript"];
+
 load.style.background = "blue";
 
-for (let i = 0; i < task.length; i++) {
-    if (typeof task[i] == "string" && task[i]) {
+function taskToDom(task) {
+    if (typeof task == "string" && task) {
         const li = document.createElement("li")
         const remove = document.createElement("button")
 
-        li.textContent = task[i]
+        li.textContent = task
         remove.textContent = "REMOVE"
 
         li.append(remove)
@@ -21,7 +21,21 @@ for (let i = 0; i < task.length; i++) {
     }
 }
 
-// function hello() {
+const task = ["Coder en Python", "Coder en c++", "Coder TypeScript"];
+
+for (let i = 0; i < task.length; i++) {
+    taskToDom(task[i])
+}
+
+taskToDom("Nouvelle tâche");
+
+// taskToDom()
+    // Affichage de tâches - chargement
+    // Ajout de l'ajout
+
+// taskToDom("Nouvelle tâche")
+
+    // function hello() {
 //     console.log("Hello !");
 // }
 
@@ -39,6 +53,6 @@ for (let i = 0; i < task.length; i++) {
 //     console.log("Hello !");
 // }, 2000)
 
-// setInterval( name => console.log("Hello"), 2000)
+// setInterval(() => console.log("Hello"), 2000)
 
-task.forEach(tache => console.log(tache))
+// task.forEach((tache) => console.log(tache))
