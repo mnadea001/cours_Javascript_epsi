@@ -44,7 +44,8 @@ taskToDom("Nouvelle tâche");
 
 function newTask() {
     input.focus();
-    taskToDom("Lorem ipsum");
+    taskToDom(input.value);
+    input.value = "";
 }
 
 add.addEventListener("click", e => {
