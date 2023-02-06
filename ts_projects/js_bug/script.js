@@ -9,3 +9,4 @@ button.addEventListener("click", function () {
     const result = add(Number(input1.value), Number(input2.value));
     console.log(result);
 });
+//# sourceMappingURL=script.js.map

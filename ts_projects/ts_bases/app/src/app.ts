@@ -49,3 +49,17 @@ userInput = 5
 if (typeof userInput === "string") {
     userName = userInput
 }
+
+// ----
+
+const input = document.getElementById("user-input")! as HTMLInputElement
+
+// const input = <HTMLInputElement>document.getElementById("user-input")!
+
+
+if (input) {
+    input.value = "Hello World !"
+}
+
+// ---- POO
+
